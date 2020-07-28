@@ -1,12 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-export default function Login() {
+export default function Statistic() {
   return (
     <View>
-      <Text>Login funcionando</Text>
+      <Text>Gráfico</Text>
     </View>
   );
 }
-
-
