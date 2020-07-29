@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
-export default function Covid (){
-  return(
+export default function Covid() {
+  return (
     <View>
-      <Text>Instruções</Text>
+      <Text>about Covid</Text>
     </View>
   );
 }

@@ -6,8 +6,13 @@ import MessageScreen from '../src/pages/message';
 import StatisticScreen from '../src/pages/Statistic';
 import SignOutScreen from '../src/pages/SignOut';
 import CovidScreen from '../src/pages/Covid';
+
+import ContactScreen from '../src/pages/Contact';
+import FeedbackScreen from '../src/pages/feedback';
+
 import ContactScreen from '../src/pages/Contact'
 import RegisterScreen from '../src/pages/Register'
+
 
 export const Home = ({navigation}) => <Screen navigation={navigation} name="Home" ><HomeScreen/></Screen>;
 
@@ -21,8 +26,11 @@ export const SignOut = ({navigation}) => <Screen navigation={navigation} name="L
 
 export const Covid = ({navigation}) => <Screen navigation={navigation} name="About Covid"><CovidScreen/></Screen>;
 
+export const Feedback = ({navigation}) => <Screen navigation={navigation} name="Feedback"><FeedbackScreen/></Screen>;
+
 export const Contact = ({ navigation }) => <Screen navigation={navigation}name="Contact"><ContactScreen /></Screen>;
 
 export const Register = ({ navigation }) => <Screen navigation={navigation} name="Register">
 <RegisterScreen /></Screen>;
+
 
