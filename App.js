@@ -2,11 +2,12 @@ import React from 'react';
 
 import { createAppContainer } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
-import { Dimensions } from 'react-native';
+
+import { Dimensions, View, Button, StyleSheet, AsyncStorage } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
-
+import { api } from './src/services/api';
 
 import{
   Home,
@@ -15,7 +16,8 @@ import{
   Statistic,
   SignOut,
   Covid,
-  Contact
+  Contact, 
+  Feedback,
 } from './screens';
 
 import Sidebar from './components/SideBar';
@@ -58,9 +60,19 @@ const DrawerNavigation = createDrawerNavigator(
         ),
       },
     },
+    
+    Feedback: {
+      screen: Feedback,
+      navigationOptions: {
+        title: 'Feedback',
+        drawerIcon: ({ tintColor }) => (
+          <Feather name="file-text" size={16} color={tintColor}></Feather>
+        ),
+      },
+    },
 
     Covid: {
-      screen: SignOut,
+      screen: Covid,
       navigationOptions: {
         title: 'Covid-19',
         drawerIcon: ({ tintColor }) => (
@@ -93,3 +105,28 @@ const DrawerNavigation = createDrawerNavigator(
 );
 
 export default createAppContainer(DrawerNavigation);
+
+// export class App extends Component{
+//   signIn = async () => {
+//     const response = await api.post('repositories', {
+//       title: 'Teste',
+//       owner: "Geisiane Maia"
+//     });
+
+//      const { user, token } =response.data;
+//      await AsyncStorage.multiSet([
+//        []
+//      ])
+//     return(
+//       <View style={styles.container}>
+//         <Button onPress={this.signIn} title="Entrar"/>
+//       </View>
+//     )
+//   }
+// }
+
+// const style = StyleSheet.create({
+//   container:{
+//     flex:1
+//   }
+// });

@@ -8,7 +8,7 @@ export default Sidebar = props => (
    <ScrollView>
        <ImageBackground
            source={require("../assets/image/background.png")}
-           style={{width: undefined, padding: 50}}
+           style={{width: undefined, padding: 50, height:230}}
        >
            
        <Image source={require("../assets/profile-pic.jpeg")} style={styles.profile}/>
