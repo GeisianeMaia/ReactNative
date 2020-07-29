@@ -2,7 +2,8 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, ImageBackground, Image} from 'react-native';
 import { DrawerNavigatorItems} from 'react-navigation-drawer';
 import { Ionicons} from '@expo/vector-icons';
-
+ 
+// teste
 export default Sidebar = props => (
    <ScrollView>
        <ImageBackground
