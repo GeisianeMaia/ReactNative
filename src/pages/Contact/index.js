@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet,  ImageBackground, Image } from 'react-native';
 import { Entypo } from '@expo/vector-icons'; 
 
-
 export default function Contact() {
   return (
     <View style={styles.container}>

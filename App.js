@@ -6,7 +6,7 @@ import { Dimensions } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
-
+import { Entypo } from '@expo/vector-icons';
 
 import{
   Home,
@@ -15,7 +15,8 @@ import{
   Statistic,
   SignOut,
   Covid,
-  Contact
+  Contact,
+  Register
 } from './screens';
 
 import Sidebar from './components/SideBar';
@@ -60,7 +61,7 @@ const DrawerNavigation = createDrawerNavigator(
     },
 
     Covid: {
-      screen: SignOut,
+      screen: Covid,
       navigationOptions: {
         title: 'Covid-19',
         drawerIcon: ({ tintColor }) => (
@@ -74,6 +75,15 @@ const DrawerNavigation = createDrawerNavigator(
         title: 'Contact',
         drawerIcon: ({ tintColor }) => (
           <AntDesign name="contacts" size={16} color={tintColor}></AntDesign>
+        ),
+      },
+    },
+    Register: {
+      screen: Register,
+      navigationOptions: {
+        title: 'Register',
+        drawerIcon: ({ tintColor }) => (
+          <Entypo name="new-message" size={16} color={tintColor}></Entypo>
         ),
       },
     },
