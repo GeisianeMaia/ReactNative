@@ -7,7 +7,11 @@ import { Dimensions, View, Button, StyleSheet, AsyncStorage } from 'react-native
 
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons'; 
+
 import { api } from './src/services/api';
+
+import { Entypo } from '@expo/vector-icons';
+
 
 import{
   Home,
@@ -18,6 +22,8 @@ import{
   Covid,
   Contact, 
   Feedback,
+  Register
+
 } from './screens';
 
 import Sidebar from './components/SideBar';
@@ -86,6 +92,15 @@ const DrawerNavigation = createDrawerNavigator(
         title: 'Contact',
         drawerIcon: ({ tintColor }) => (
           <AntDesign name="contacts" size={16} color={tintColor}></AntDesign>
+        ),
+      },
+    },
+    Register: {
+      screen: Register,
+      navigationOptions: {
+        title: 'Register',
+        drawerIcon: ({ tintColor }) => (
+          <Entypo name="new-message" size={16} color={tintColor}></Entypo>
         ),
       },
     },

@@ -18,6 +18,10 @@ export default function Home (){
        <TouchableOpacity style={styles.btnSubmit}>
          <Text style={styles.submitText}>Login</Text>
        </TouchableOpacity>
+
+       <TouchableOpacity style={styles.register}>
+         <Text style={styles.registerText}>Fazer cadastro</Text>
+       </TouchableOpacity>
     </View>
     
   );
@@ -43,11 +47,8 @@ const styles = StyleSheet.create({
     borderBottomColor:'#ccc',
     borderBottomWidth:1,
     fontSize: 20,
- 
- 
  },
  btnSubmit:{
-  
   alignSelf:'stretch',
   alignItems: 'center',
   padding:20,
@@ -75,7 +76,16 @@ IconLock:{
   left: 5,
   color: '#35AAFF'
  
-}
+},
 
+
+register: {
+  bottom:30
+},
+registerText: {
+  color:'#35AAFF',
+  borderBottomColor: '#35AAFF',
+  borderBottomWidth: 1
+}
  
 })
