@@ -16,7 +16,7 @@ export default function Login ({ navigation }){
     <View style={styles.container}>
       
         <Image 
-        source={require("../Profile/img/login.png")}
+        source={require("../Login/img/login.png")}
         style={styles.logo}
         />
 
