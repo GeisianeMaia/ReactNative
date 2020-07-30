@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <Searchbar
-      style={styles.search}
+      // style={styles.search}
       placeholder="Search"
       onChangeText={onChangeSearch}
       value={searchQuery}
