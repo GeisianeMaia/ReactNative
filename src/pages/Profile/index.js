@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-export default function Covid() {
+export default function SignOut() {
   return (
     <View>
-      <Text>Covid</Text>
+      <Text>Saindo</Text>
     </View>
   );
 }

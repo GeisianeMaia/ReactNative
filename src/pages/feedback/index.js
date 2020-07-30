@@ -77,7 +77,7 @@ export default function Covid({ navigation }) {
       <TextInput
         value={empresa}
         style={styles.input}
-        placeholder="Empresa"
+        placeholder="Company"
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setEmpresa}
@@ -139,9 +139,10 @@ const styles = StyleSheet.create({
     width: 300,
     height: 40,
     borderColor: "#ccc",
-    borderWidth: 0.5,
+    borderWidth: 2,
     marginBottom: 20,
     paddingLeft: 10,
+    fontSize:20
   },
 
   textarea: {
@@ -154,7 +155,7 @@ const styles = StyleSheet.create({
 
   title: {
     textAlign: "center",
-    fontSize: 18,
+    fontSize: 25,
     marginBottom: 20,
   },
 

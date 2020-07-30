@@ -16,7 +16,7 @@ export default function Login ({ navigation }){
     <View style={styles.container}>
       
         <Image 
-        source={require("../Login/img/login.png")}
+        source={require("../Profile/img/login.png")}
         style={styles.logo}
         />
 
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
 IconLock:{
   position:'absolute',
-  top: 415,
+  top: 315,
   left: 5,
   color: '#35AAFF'
  
