@@ -25,13 +25,13 @@ import {
   Feedback,
   Register,
   Feed,
+ 
 } from './screens';
 
 import Sidebar from './components/SideBar';
 
 const DrawerNavigation = createDrawerNavigator(
   {
-   
     Profile: {
       screen: Profile,
       navigationOptions: {

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
-export default function Login ({ navigation }){
+export default function Profile ({ navigation }){
 
   const Register = () => {
     // passando parametros com navigation
@@ -16,7 +16,7 @@ export default function Login ({ navigation }){
     <View style={styles.container}>
       
         <Image 
-        source={require("../Login/img/login.png")}
+        source={require("../Profile/img/login.png")}
         style={styles.logo}
         />
 
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
 IconLock:{
   position:'absolute',
-  top: 415,
+  top: 315,
   left: 5,
   color: '#35AAFF'
  
