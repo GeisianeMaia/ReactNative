@@ -25,6 +25,7 @@ import {
   Feedback,
   Register,
   Feed,
+  Login,
  
 } from './screens';
 
@@ -32,6 +33,16 @@ import Sidebar from './components/SideBar';
 
 const DrawerNavigation = createDrawerNavigator(
   {
+    Login: {
+      screen: Login,
+      navigationOptions: {
+        title: 'Login',
+        drawerIcon: ({ tintColor }) => (
+          <Feather name="log-out" size={16} color={tintColor}></Feather>
+        ),
+      },
+    },
+    
     Profile: {
       screen: Profile,
       navigationOptions: {
@@ -103,9 +114,21 @@ const DrawerNavigation = createDrawerNavigator(
         ),
       },
     },
+
+    
     
     Register: {
       screen: Register,
+      navigationOptions: {
+        title: '',
+        // drawerIcon: ({ tintColor }) => (
+        //   <Entypo name="new-message" size={16} color={tintColor}></Entypo>
+        // ),
+      },
+    },
+
+    Login: {
+      screen: Login,
       navigationOptions: {
         title: '',
         // drawerIcon: ({ tintColor }) => (

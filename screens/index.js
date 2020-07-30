@@ -1,7 +1,7 @@
 import React from 'react';
 import Screen from './Screen';
 import HomeScreen from '../src/pages/home';
-import ProfileScreen from '../src/pages/Login';
+import ProfileScreen from '../src/pages/Profile';
 import MessageScreen from '../src/pages/message';
 import StatisticScreen from '../src/pages/Statistic';
 import SignOutScreen from '../src/pages/SignOut';
@@ -10,6 +10,7 @@ import FeedbackScreen from '../src/pages/feedback';
 import ContactScreen from '../src/pages/Contact'
 import RegisterScreen from '../src/pages/Register'
 import FeedScreen from '../src/pages/feed'
+import LoginScreen from '../src/pages/Login'
 
 
 
@@ -35,6 +36,6 @@ export const Register = ({ navigation }) => <Screen navigation={navigation} name
 
 export const Feed = ({navigation}) => <Screen navigation={navigation} name="Feed" ><FeedScreen navigation={navigation}/></Screen>;
 
-
+export const Login = ({navigation}) => <Screen navigation={navigation} name="Login"><LoginScreen navigation={navigation}/></Screen>;
 
 
