@@ -31,18 +31,19 @@ import Sidebar from './components/SideBar';
 
 const DrawerNavigation = createDrawerNavigator(
   {
-    Home: {
-      screen: Home,
-      navigationOptions: {
-        title: 'Home',
-        drawerIcon: ({ tintColor }) => <Feather name="home" size={16} color={tintColor}></Feather>,
-      },
-    },
+   
     Profile: {
       screen: Profile,
       navigationOptions: {
         title: 'Profile',
         drawerIcon: ({ tintColor }) => <Feather name="user" size={16} color={tintColor}></Feather>,
+      },
+    },
+    Home: {
+      screen: Home,
+      navigationOptions: {
+        title: 'Home',
+        drawerIcon: ({ tintColor }) => <Feather name="home" size={16} color={tintColor}></Feather>,
       },
     },
     Message: {
@@ -92,15 +93,7 @@ const DrawerNavigation = createDrawerNavigator(
         ),
       },
     },
-    Register: {
-      screen: Register,
-      navigationOptions: {
-        title: 'Register',
-        drawerIcon: ({ tintColor }) => (
-          <Entypo name="new-message" size={16} color={tintColor}></Entypo>
-        ),
-      },
-    },
+
     SignOut: {
       screen: SignOut,
       navigationOptions: {
@@ -110,14 +103,25 @@ const DrawerNavigation = createDrawerNavigator(
         ),
       },
     },
+    
+    Register: {
+      screen: Register,
+      navigationOptions: {
+        title: '',
+        // drawerIcon: ({ tintColor }) => (
+        //   <Entypo name="new-message" size={16} color={tintColor}></Entypo>
+        // ),
+      },
+    },
+    
 
     Feed: {
       screen: Feed,
       navigationOptions: {
-        title: 'Feed',
-        drawerIcon: ({ tintColor }) => (
-          <Feather name="log-out" size={16} color={tintColor}></Feather>
-        ),
+        title: '',
+        // drawerIcon: ({ tintColor }) => (
+        //   <Feather name="log-out" size={16} color={tintColor}></Feather>
+        // ),
       },
     },
   },

@@ -15,7 +15,7 @@ import FeedScreen from '../src/pages/feed'
 
 export const Home = ({navigation}) => <Screen navigation={navigation} name="Home" ><HomeScreen navigation={navigation}/></Screen>;
 
-export const Profile = ({navigation}) => <Screen navigation={navigation} name="Profile"><ProfileScreen/></Screen>;
+export const Profile = ({navigation}) => <Screen navigation={navigation} name="Profile"><ProfileScreen navigation={navigation}/></Screen>;
 
 export const Message = ({navigation}) => <Screen navigation={navigation} name="Message"><MessageScreen/></Screen>;
 
@@ -29,7 +29,7 @@ export const Feedback = ({navigation}) => <Screen navigation={navigation} name="
 
 export const Contact = ({ navigation }) => <Screen navigation={navigation}name="Contact"><ContactScreen /></Screen>;
 
-export const Register = ({ navigation }) => <Screen navigation={navigation} name="Register"><RegisterScreen /></Screen>;
+export const Register = ({ navigation }) => <Screen navigation={navigation} name="Register"><RegisterScreen navigation={navigation} /></Screen>;
 
 export const Feed = ({navigation}) => <Screen navigation={navigation} name="Feed" ><FeedScreen navigation={navigation}/></Screen>;
 

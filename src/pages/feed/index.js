@@ -20,7 +20,8 @@ export default function feed({ navigation }) {
       {feedbacks?.map((feed, index) => (
         <View key={index}>
           <Text>{feed?.name}</Text>
-          <Text>{feed?.cpf}</Text>
+          <Text>{feed?.empresa}</Text>
+          <Text>{feed?.title}</Text>
           <Text>{feed?.description}</Text>
           <TouchableOpacity
             style={{width:100, padding: 20, backgroundColor: "#0099ff" }}

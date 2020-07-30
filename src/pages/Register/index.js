@@ -2,7 +2,16 @@ import React from 'react';
 import {View, Text, Image, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
-export default function Register() {
+export default function Register({ navigation }) {
+
+  const Login = () => {
+    // passando parametros com navigation
+    navigation.navigate("Profile");}
+
+    const Register = () => {
+      // passando parametros com navigation
+      navigation.navigate("Home");}
+
   return (
     <View style={styles.container}>
       <Image source={require('./img/ICON617.jpg')} style={styles.logo} />
@@ -62,11 +71,11 @@ export default function Register() {
         autoCorrect={false}
         onChangeText={() => {}}
       />
-      <TouchableOpacity style={styles.btnRegister}>
+      <TouchableOpacity style={styles.btnRegister} onPress={Register}>
         <Text style={styles.registerText}>Register</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.login}>
+      <TouchableOpacity style={styles.login} onPress={Login}>
         <Text style={styles.loginText}>Fazer login</Text>
       </TouchableOpacity>
     </View>

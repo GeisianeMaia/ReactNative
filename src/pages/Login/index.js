@@ -2,7 +2,16 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
-export default function Home (){
+export default function Login ({ navigation }){
+
+  const Register = () => {
+    // passando parametros com navigation
+    navigation.navigate("Register");}
+
+    const Login = () => {
+      // passando parametros com navigation
+      navigation.navigate("Home");}
+
   return(
     <View style={styles.container}>
       
@@ -15,11 +24,11 @@ export default function Home (){
        <TextInput style={{width: 30}, styles.input} placeholder="      example@mail.com" placeholderTextColor = "#35AAFF" autoCorrect={false} onChangeText={()=>{}}/>
        <Feather name="lock" size={16} color={'#000'} style={styles.IconLock}></Feather>
        <TextInput style={styles.input} placeholder="     •••••••••" placeholderTextColor = "#35AAFF" autoCorrect={false} onChangeText={()=>{}}/>
-       <TouchableOpacity style={styles.btnSubmit}>
+       <TouchableOpacity style={styles.btnSubmit}  onPress={Login}>
          <Text style={styles.submitText}>Login</Text>
        </TouchableOpacity>
 
-       <TouchableOpacity style={styles.register}>
+       <TouchableOpacity style={styles.register} onPress={Register}>
          <Text style={styles.registerText}>Fazer cadastro</Text>
        </TouchableOpacity>
     </View>
