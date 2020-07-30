@@ -6,47 +6,42 @@ import { createDrawerNavigator } from 'react-navigation-drawer';
 import { Dimensions, View, Button, StyleSheet, AsyncStorage } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons'; 
+import { AntDesign } from '@expo/vector-icons';
 
 import { api } from './src/services/api';
 
 import { Entypo } from '@expo/vector-icons';
 
+import { StorageProvider } from './src/hooks/useStorage';
 
-import{
+import {
   Home,
   Profile,
   Message,
   Statistic,
   SignOut,
   Covid,
-  Contact, 
+  Contact,
   Feedback,
-  Register
-
+  Register,
 } from './screens';
 
 import Sidebar from './components/SideBar';
 
 const DrawerNavigation = createDrawerNavigator(
   {
-    
     Home: {
       screen: Home,
       navigationOptions: {
         title: 'Home',
-        drawerIcon: ({ tintColor }) => (
-          <Feather name="home" size={16} color={tintColor}></Feather>
-        ),
+        drawerIcon: ({ tintColor }) => <Feather name="home" size={16} color={tintColor}></Feather>,
       },
     },
     Profile: {
       screen: Profile,
       navigationOptions: {
         title: 'Profile',
-        drawerIcon: ({ tintColor }) => (
-          <Feather name="user" size={16} color={tintColor}></Feather>
-        ),
+        drawerIcon: ({ tintColor }) => <Feather name="user" size={16} color={tintColor}></Feather>,
       },
     },
     Message: {
@@ -67,7 +62,7 @@ const DrawerNavigation = createDrawerNavigator(
         ),
       },
     },
-    
+
     Feedback: {
       screen: Feedback,
       navigationOptions: {
@@ -117,11 +112,19 @@ const DrawerNavigation = createDrawerNavigator(
   },
   {
     contentComponent: (props) => <Sidebar {...props} />,
-  },
+  }
 );
 
-export default createAppContainer(DrawerNavigation);
+const Routes = createAppContainer(DrawerNavigation);
 
+const App = () => {
+  return (
+    <StorageProvider>
+      <Routes />
+    </StorageProvider>
+  );
+};
+export default App;
 // export class App extends Component{
 //   signIn = async () => {
 //     const response = await api.post('repositories', {
