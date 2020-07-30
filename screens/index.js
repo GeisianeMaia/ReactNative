@@ -9,6 +9,7 @@ import CovidScreen from '../src/pages/Covid';
 import FeedbackScreen from '../src/pages/feedback';
 import ContactScreen from '../src/pages/Contact'
 import RegisterScreen from '../src/pages/Register'
+import FeedScreen from '../src/pages/feed'
 
 
 
@@ -29,5 +30,7 @@ export const Feedback = ({navigation}) => <Screen navigation={navigation} name="
 export const Contact = ({ navigation }) => <Screen navigation={navigation}name="Contact"><ContactScreen /></Screen>;
 
 export const Register = ({ navigation }) => <Screen navigation={navigation} name="Register"><RegisterScreen /></Screen>;
+
+export const Feed = ({navigation}) => <Screen navigation={navigation} name="Feed" ><FeedScreen navigation={navigation}/></Screen>;
 
 

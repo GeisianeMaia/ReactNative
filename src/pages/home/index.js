@@ -14,11 +14,11 @@ export default function Home({ navigation }) {
     <View>
       <Text>Minha Home </Text>
       {feedbacks?.map((feed, index) => (
-        <>
-          <Text key={index}>{feed?.name}</Text>
-          <Text key={index}>{feed?.cpf}</Text>
-          <Text key={index}>{feed?.description}</Text>
-        </>
+        <View key={index}>
+          <Text >{feed?.name}</Text>
+          <Text >{feed?.cpf}</Text>
+          <Text >{feed?.description}</Text>
+        </View>
       ))}
     </View>
   );

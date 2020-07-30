@@ -24,6 +24,7 @@ import {
   Contact,
   Feedback,
   Register,
+  Feed,
 } from './screens';
 
 import Sidebar from './components/SideBar';
@@ -104,6 +105,16 @@ const DrawerNavigation = createDrawerNavigator(
       screen: SignOut,
       navigationOptions: {
         title: 'SignOut',
+        drawerIcon: ({ tintColor }) => (
+          <Feather name="log-out" size={16} color={tintColor}></Feather>
+        ),
+      },
+    },
+
+    Feed: {
+      screen: Feed,
+      navigationOptions: {
+        title: 'Feed',
         drawerIcon: ({ tintColor }) => (
           <Feather name="log-out" size={16} color={tintColor}></Feather>
         ),
