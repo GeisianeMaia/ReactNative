@@ -11,7 +11,8 @@ import ContactScreen from '../src/pages/Contact'
 import RegisterScreen from '../src/pages/Register'
 
 
-export const Home = ({navigation}) => <Screen navigation={navigation} name="Home" ><HomeScreen/></Screen>;
+
+export const Home = ({navigation}) => <Screen navigation={navigation} name="Home" ><HomeScreen navigation={navigation}/></Screen>;
 
 export const Profile = ({navigation}) => <Screen navigation={navigation} name="Profile"><ProfileScreen/></Screen>;
 
@@ -23,7 +24,7 @@ export const SignOut = ({navigation}) => <Screen navigation={navigation} name="L
 
 export const Covid = ({navigation}) => <Screen navigation={navigation} name="About Covid"><CovidScreen/></Screen>;
 
-export const Feedback = ({navigation}) => <Screen navigation={navigation} name="Feedback"><FeedbackScreen/></Screen>;
+export const Feedback = ({navigation}) => <Screen navigation={navigation} name="Feedback"><FeedbackScreen navigation={navigation}/></Screen>;
 
 export const Contact = ({ navigation }) => <Screen navigation={navigation}name="Contact"><ContactScreen /></Screen>;
 

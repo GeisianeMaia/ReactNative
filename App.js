@@ -30,6 +30,7 @@ import Sidebar from './components/SideBar';
 
 const DrawerNavigation = createDrawerNavigator(
   {
+    
     Home: {
       screen: Home,
       navigationOptions: {

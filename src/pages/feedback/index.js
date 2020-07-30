@@ -2,8 +2,12 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableWithoutFeedback , Animated} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
+export default function Covid ({navigation}){
 
-export default function Covid (){
+ 
+  const Send = () => {
+    navigation.navigate('Home', {usuario:'teste'})
+  }
   return(
     <View style={styles.container}>
       <Text style={styles.title}>Forms</Text>
@@ -40,7 +44,8 @@ export default function Covid (){
       autoCorrect={false} 
       onChangeText={()=>{}}/>
 
-      <TouchableWithoutFeedback >
+      <TouchableWithoutFeedback
+      onPress={Send} >
        <Animated.View style={styles.button}>
 
           <Feather name="arrow-right" size={26} color={'#fff'} style={styles.IconLock}></Feather>
