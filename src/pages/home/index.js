@@ -16,7 +16,7 @@ const Home = () => {
         value={searchQuery}
       />
 
-      <Text style={styles.textInfo}>Informações importantes</Text>
+      <Text style={styles.textInfo}>INFORMATION</Text>
 
       <View style={styles.info}>
         <ScrollView

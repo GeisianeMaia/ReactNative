@@ -118,28 +118,28 @@ const styles = StyleSheet.create({
 
   IconUsers: {
     position: 'absolute',
-    top: 250,
+    top: 280,
     left: 5,
     color: '#35AAFF',
   },
 
   IconMail: {
     position: 'absolute',
-    top: 320,
+    top: 345,
     left: 5,
     color: '#35AAFF',
   },
 
   IconLock: {
     position: 'absolute',
-    top: 380,
+    top: 410,
     left: 5,
     color: '#35AAFF',
   },
 
   IconLock2: {
     position: 'absolute',
-    top: 445,
+    top: 475,
     left: 5,
     color: '#35AAFF',
   },

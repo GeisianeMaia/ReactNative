@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
  },
  IconMail:{
   position:'absolute',
-  top: 340,
+  bottom: 290,
   left: 5,
   color: '#35AAFF'
  
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
 IconLock:{
   position:'absolute',
-  top: 315,
+  top: 430,
   left: 5,
   color: '#35AAFF'
  

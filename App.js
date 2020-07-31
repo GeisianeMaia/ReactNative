@@ -91,7 +91,7 @@ const DrawerNavigation = createDrawerNavigator(
       navigationOptions: {
         title: 'Feed',
         drawerIcon: ({ tintColor }) => (
-          <Feather name="log-out" size={16} color={tintColor}></Feather>
+          <Feather name="file-text" size={16} color={tintColor}></Feather>
         ),
       },
     },
