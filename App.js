@@ -86,6 +86,16 @@ const DrawerNavigation = createDrawerNavigator(
       },
     },
 
+    Feed: {
+      screen: Feed,
+      navigationOptions: {
+        title: 'Feed',
+        drawerIcon: ({ tintColor }) => (
+          <Feather name="log-out" size={16} color={tintColor}></Feather>
+        ),
+      },
+    },
+
     Covid: {
       screen: Covid,
       navigationOptions: {
@@ -138,15 +148,7 @@ const DrawerNavigation = createDrawerNavigator(
     },
     
 
-    Feed: {
-      screen: Feed,
-      navigationOptions: {
-        title: '',
-        // drawerIcon: ({ tintColor }) => (
-        //   <Feather name="log-out" size={16} color={tintColor}></Feather>
-        // ),
-      },
-    },
+   
   },
   {
     contentComponent: (props) => <Sidebar {...props} />,

@@ -1,10 +1,18 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image, ImageBackground, StyleSheet } from 'react-native';
 
 export default function Covid() {
   return (
-    <View>
-      <Text>Covid</Text>
-    </View>
+    
+     <ImageBackground style={styles.container}>
+       <Image source={require('./img/covid19.jpg')}/>
+     </ImageBackground>
+    
   );
 }
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1
+  }
+})

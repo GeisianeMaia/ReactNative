@@ -7,7 +7,7 @@ export default Sidebar = props => (
    <ScrollView>
        <ImageBackground
            source={require("../assets/image/background.png")}
-           style={{width: undefined, padding: 50, height:230}}
+           style={{width: undefined, padding: 50, height:210}}
        >
            
        <Image source={require("../assets/profile-pic.jpeg")} style={styles.profile}/>
@@ -23,7 +23,8 @@ export default Sidebar = props => (
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+       
     },
 
     profile: {
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         borderWidth: 3,
         borderColor: '#fff',
-        marginTop: 20
+        marginTop: -5
 
     },
 

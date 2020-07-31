@@ -1,10 +1,18 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image, ImageBackground, StyleSheet } from 'react-native';
 
 export default function SignOut() {
   return (
-    <View>
-      <Text>Saindo</Text>
-    </View>
+    
+     <ImageBackground style={styles.container}>
+       <Image source={require('./img/Profile.jpg')}/>
+     </ImageBackground>
+    
   );
 }
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1
+  }
+})
