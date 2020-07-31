@@ -6,7 +6,7 @@ export default function Register({ navigation }) {
 
   const Login = () => {
     // passando parametros com navigation
-    navigation.navigate("Profile");}
+    navigation.navigate("Login");}
 
     const Register = () => {
       // passando parametros com navigation

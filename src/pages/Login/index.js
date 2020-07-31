@@ -23,7 +23,7 @@ export default function Login ({ navigation }){
        <Feather name="mail" size={16} color={'#000'} style={styles.IconMail}></Feather>
        <TextInput style={{width: 30}, styles.input} placeholder="      example@mail.com" placeholderTextColor = "#35AAFF" autoCorrect={false} onChangeText={()=>{}}/>
        <Feather name="lock" size={16} color={'#000'} style={styles.IconLock}></Feather>
-       <TextInput style={styles.input} placeholder="     •••••••••" placeholderTextColor = "#35AAFF" autoCorrect={false} onChangeText={()=>{}}/>
+       <TextInput style={styles.input}  secureTextEntry={true}  placeholder="      •••••••••" placeholderTextColor = "#35AAFF" autoCorrect={false} onChangeText={()=>{}}/>
        <TouchableOpacity style={styles.btnSubmit}  onPress={Login}>
          <Text style={styles.submitText}>Login</Text>
        </TouchableOpacity>
