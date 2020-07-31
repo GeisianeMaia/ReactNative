@@ -10,7 +10,7 @@ export default Sidebar = props => (
            style={{width: undefined, padding: 50, height:210}}
        >
            
-       <Image source={require("../assets/profile-pic.jpeg")} style={styles.profile}/>
+       <Image source={require("../assets/menina.jpg")} style={styles.profile}/>
         <Text style={styles.name}>Geisiane Maia</Text>
        </ImageBackground>
 

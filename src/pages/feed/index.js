@@ -72,6 +72,9 @@ export default function feed({ navigation }) {
                 {feed?.empresa}
               </Text>
               <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
+                Adress Company: {feed?.cpf}
+              </Text>
+              <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
                 Name: {feed?.name}
               </Text>
               <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
