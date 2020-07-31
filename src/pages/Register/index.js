@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#ccc',
     borderBottomWidth: 1,
     fontSize: 20,
+    fontFamily: 'Roboto_400Regular',
   },
   btnRegister: {
     alignSelf: 'stretch',
@@ -114,6 +115,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 20,
+    fontFamily: 'Roboto_400Regular',
   },
 
   IconUsers: {

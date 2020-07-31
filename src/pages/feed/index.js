@@ -41,43 +41,66 @@ export default function feed({ navigation }) {
     //   ))}
     // </ScrollView>
 
-    <ScrollView style={{ width: "100%" }}>
+    <ScrollView style={{ width: '100%' }}>
       <Text
         style={{
-          color: "#07b8bf",
-          fontWeight: "bold",
+          color: '#07b8bf',
+          fontWeight: 'bold',
           fontSize: 25,
-          textAlign: "center",
+          textAlign: 'center',
+          fontFamily: 'Ubuntu_700Bold',
         }}
       >
-        FEEDBACKS{" "}
+        FEEDBACKS{' '}
       </Text>
       {feedbacks?.map((feed, index) => (
-        <View key={`Feedback-${index}`} style={{ color: "#fff" }}>
+        <View key={`Feedback-${index}`} style={{ color: '#fff' }}>
           <View style={styles.cardIcon}>
             <Feather name="user" size={26} color="#000" style={styles.icon} />
           </View>
 
           <View style={styles.card}>
-            <View style={styles.cardContent} >
+            <View style={styles.cardContent}>
               <Text
                 style={{
-                  textAlign: "center",
-                  fontWeight: "bold",
+                  textAlign: 'center',
+                  fontWeight: 'bold',
                   fontSize: 22,
                   marginBottom: 5,
-                  color: "#fff",
+                  color: '#fff',
+                  fontFamily: 'Roboto_400Regular',
                 }}
               >
                 {feed?.empresa}
               </Text>
-              <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
+              <Text
+                style={{
+                  fontSize: 18,
+                  marginTop: 5,
+                  color: '#fff',
+                  fontFamily: 'Roboto_400Regular',
+                }}
+              >
                 Name: {feed?.name}
               </Text>
-              <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
+              <Text
+                style={{
+                  fontSize: 18,
+                  marginTop: 5,
+                  color: '#fff',
+                  fontFamily: 'Roboto_400Regular',
+                }}
+              >
                 Title: {feed?.title}
               </Text>
-              <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
+              <Text
+                style={{
+                  fontSize: 18,
+                  marginTop: 5,
+                  color: '#fff',
+                  fontFamily: 'Roboto_400Regular',
+                }}
+              >
                 Description: {feed?.description}
               </Text>
             </View>
@@ -85,7 +108,7 @@ export default function feed({ navigation }) {
             <View style={styles.cardButton}>
               <TouchableWithoutFeedback onPress={() => handleDelete(feed.id)}>
                 <Animated.View>
-                  <Feather name="trash-2" size={26} color={"#fff"}></Feather>
+                  <Feather name="trash-2" size={26} color={'#fff'}></Feather>
                 </Animated.View>
               </TouchableWithoutFeedback>
             </View>

@@ -37,64 +37,60 @@ export default function Login ({ navigation }){
 }
 
 const styles = StyleSheet.create({
-  container:{
-    flex:1,
-    alignItems:'center',
-    justifyContent:'center'
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  logo:{
+  logo: {
     width: 300,
     height: 300,
-    
   },
-  input:{
- 
+  input: {
     alignSelf: 'stretch',
     height: 40,
     marginBottom: 40,
-    color:'#000',
-    borderBottomColor:'#ccc',
-    borderBottomWidth:1,
+    color: '#000',
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
     fontSize: 20,
- },
- btnSubmit:{
-  alignSelf:'stretch',
-  alignItems: 'center',
-  padding:20,
-  backgroundColor:'#35AAFF',
-  marginTop:30,
-  borderRadius:5,
-  bottom:40
-},
- submitText:{
-   color:'#fff',
-   fontWeight: 'bold',
-   fontSize: 20
- },
- IconMail:{
-  position:'absolute',
-  bottom: 290,
-  left: 5,
-  color: '#35AAFF'
- 
-},
+    fontFamily: 'Roboto_400Regular',
+  },
+  btnSubmit: {
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: '#35AAFF',
+    marginTop: 30,
+    borderRadius: 5,
+    bottom: 40,
+  },
+  submitText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fontFamily: 'Roboto_400Regular',
+  },
+  IconMail: {
+    position: 'absolute',
+    bottom: 290,
+    left: 5,
+    color: '#35AAFF',
+  },
 
-IconLock:{
-  position:'absolute',
-  top: 430,
-  left: 5,
-  color: '#35AAFF'
- 
-},
+  IconLock: {
+    position: 'absolute',
+    top: 430,
+    left: 5,
+    color: '#35AAFF',
+  },
 
-
-register: {
-  bottom:30
-},
-registerText: {
-  color:'#35AAFF',
-  borderBottomColor: '#35AAFF',
-  borderBottomWidth: 1
-}
- 
-})
+  register: {
+    bottom: 30,
+  },
+  registerText: {
+    color: '#35AAFF',
+    borderBottomColor: '#35AAFF',
+    borderBottomWidth: 1,
+  },
+});

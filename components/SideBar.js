@@ -22,31 +22,26 @@ export default Sidebar = props => (
 );
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-       
-    },
+  container: {
+    flex: 1,
+  },
 
-    profile: {
-        width: 100,
-        height:  100,
-        borderRadius: 50,
-        borderWidth: 3,
-        borderColor: '#fff',
-        marginTop: -5
+  profile: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    borderWidth: 3,
+    borderColor: '#fff',
+    marginTop: -5,
+  },
 
-    },
-
-    name:{
-        marginTop: 15,
-        color:'#fff',
-        fontSize: 25,
-        fontWeight: '800',
-       
-       
-
-    }
-
+  name: {
+    marginTop: 15,
+    color: '#fff',
+    fontSize: 25,
+    fontWeight: '800',
+    fontFamily: 'Roboto_400Regular',
+  },
 });
 
 

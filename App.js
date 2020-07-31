@@ -31,6 +31,10 @@ import {
 
 import Sidebar from './components/SideBar';
 
+import { Ubuntu_700Bold, useFonts } from '@expo-google-fonts/ubuntu'
+import { Roboto_400Regular } from '@expo-google-fonts/roboto'
+import { AppLoading } from 'expo';
+
 const DrawerNavigation = createDrawerNavigator(
   {
     Login: {
@@ -158,6 +162,14 @@ const DrawerNavigation = createDrawerNavigator(
 const Routes = createAppContainer(DrawerNavigation);
 
 const App = () => {
+  const [fontsLoaded] = useFonts({
+    Roboto_400Regular,
+    Ubuntu_700Bold
+  })
+
+  if(!fontsLoaded) {
+    return<AppLoading />
+  }
   return (
     <StorageProvider>
       <Routes />
