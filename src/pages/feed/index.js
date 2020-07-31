@@ -75,7 +75,7 @@ export default function feed({ navigation }) {
               </Text>
 
               <Text style={{ fontSize: 18, marginTop: 5, color: "#fff", fontFamily: 'Roboto_400Regular'}}>
-                Adress Company: {feed?.cpf}
+                Adress: {feed?.cpf}
               </Text>
               <Text style={{ fontSize: 18, marginTop: 5, color: "#fff" }}>
 

@@ -6,12 +6,12 @@ import { DrawerNavigatorItems} from 'react-navigation-drawer';
 export default Sidebar = props => (
    <ScrollView>
        <ImageBackground
-           source={require("../assets/image/background.png")}
+           source={require("../assets/mapa.png")}
            style={{width: undefined, padding: 50, height:210}}
        >
            
        <Image source={require("../assets/menina.jpg")} style={styles.profile}/>
-        <Text style={styles.name}>Geisiane Maia</Text>
+        <Text style={styles.name}>Maria Silva</Text>
        </ImageBackground>
 
        <View style={styles.container}>

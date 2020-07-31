@@ -5,7 +5,7 @@ export default function Statistic() {
   return (
     
      <ImageBackground style={styles.container}>
-       <Image source={require('./img/feed.jpg')}/>
+       <Image source={require('./img/status.jpg')}/>
      </ImageBackground>
     
   );

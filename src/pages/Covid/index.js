@@ -5,7 +5,7 @@ export default function Covid() {
   return (
     
      <ImageBackground style={styles.container}>
-       <Image source={require('./img/covid19.jpg')}/>
+       <Image source={require('./img/corona.jpg')}/>
      </ImageBackground>
     
   );

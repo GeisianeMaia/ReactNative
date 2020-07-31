@@ -7,7 +7,7 @@ export default function Contact() {
     <View style={styles.container}>
     
         <ImageBackground
-          source={require('../../../assets/image/background.png')}
+          source={require('./img/mapa.png')}
           style={(styles.cx1, { padding: 50, height: 205 })}
         >
           {/* <Text style={styles.nomeApp}>Nome do app</Text> */}
