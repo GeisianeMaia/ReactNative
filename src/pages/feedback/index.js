@@ -64,7 +64,7 @@ export default function Covid({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Forms</Text>
+      <Text style={styles.title}>FORMS</Text>
       <TextInput
         value={name}
         style={styles.input}
@@ -86,7 +86,7 @@ export default function Covid({ navigation }) {
       <TextInput
         value={cpf}
         style={styles.input}
-        placeholder="CPF"
+        placeholder="Address"
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setCpf}
@@ -104,7 +104,7 @@ export default function Covid({ navigation }) {
       <TextInput
         value={description}
         style={styles.textarea}
-        placeholder=""
+        placeholder="Description"
         textAlignVertical="top"
         multiline={true}
         placeholderTextColor="#35AAFF"
@@ -139,24 +139,26 @@ const styles = StyleSheet.create({
     width: 300,
     height: 40,
     borderColor: "#ccc",
-    borderWidth: 2,
+    borderWidth: 1,
     marginBottom: 20,
     paddingLeft: 10,
-    fontSize:20
+    fontSize:18
   },
 
   textarea: {
     height: 120,
     width: 300,
     borderColor: "#ccc",
-    borderWidth: 2,
+    borderWidth: 1,
     paddingLeft: 10,
+    fontSize:18
   },
 
   title: {
     textAlign: "center",
     fontSize: 25,
-    marginBottom: 20,
+    marginBottom: 30,
+    color:'#35AAFF'
   },
 
   button: {

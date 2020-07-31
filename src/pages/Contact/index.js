@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet,  ImageBackground, Image } from 'react-native';
-import { Entypo } from '@expo/vector-icons'; 
+import { Feather } from '@expo/vector-icons';
 
 export default function Contact() {
   return (
@@ -10,21 +10,21 @@ export default function Contact() {
           source={require('../../../assets/image/background.png')}
           style={(styles.cx1, { padding: 50, height: 205 })}
         >
-          <Text style={styles.nomeApp}>Nome do app</Text>
+          {/* <Text style={styles.nomeApp}>Nome do app</Text> */}
           <Image
-            source={require('../../../assets/profile-pic.jpeg')}
+            source={require('./img/splash.png')}
             style={styles.profile}
           />
         </ImageBackground>
       
       <View style={styles.cx2}>
-        <Text style={styles.contact}>
-          Caso tenha alguma dúvida ou queira dar algum feedback, entre em
-          contato:
+        <Text style={{fontSize:30, fontWeight:'bold', textAlign:'center', marginTop:70}}>
+          SPACE PLACE
         </Text>
+        <Text style={{fontSize:18, textAlign:'center'}}>São Paulo, Brasil</Text>
 
         <Text style={styles.contact}>
-          <Entypo name="email" size={44} color="black" />
+        <Feather name="mail" size={22} color={'#35AAFF'} style={styles.IconLock}></Feather>
         </Text>
 
         <Text style={styles.contactEmail}>equipe18ibm@gmail.com</Text>
@@ -36,6 +36,7 @@ export default function Contact() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width:'100%'
   },
 
   nomeApp: {
@@ -46,11 +47,11 @@ const styles = StyleSheet.create({
   profile: {
     width: 150,
     height: 150,
-    borderRadius: 50,
+    borderRadius: 100,
     borderWidth: 3,
-    borderColor: '#fff',
-    marginTop: 30,
-    marginLeft: 85,
+    borderColor: '#000',
+    marginTop: 50,
+    marginLeft: 70,
   },
 
   cx1: {
@@ -78,6 +79,7 @@ const styles = StyleSheet.create({
 
   contactEmail: {
     textAlign: 'center',
-    fontSize: 26,
+    fontSize: 20,
+    color:'#35AAFF'
   },
 });

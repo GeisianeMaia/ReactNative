@@ -50,7 +50,7 @@ export default function feed({ navigation }) {
           textAlign: "center",
         }}
       >
-        Feedbacks{" "}
+        FEEDBACKS{" "}
       </Text>
       {feedbacks?.map((feed, index) => (
         <View key={`Feedback-${index}`} style={{ color: "#fff" }}>
@@ -104,13 +104,13 @@ const styles = StyleSheet.create({
     width: "70%",
     borderRadius: 6,
     elevation: 3,
-    backgroundColor: "#07b8bf",
+    backgroundColor: "#87CEFA",
     shadowOffset: { width: 1, height: 1 },
     shadowOpacity: 0.3,
     shadowRadius: 2,
     marginHorizontal: 4,
     marginVertical: 6,
-    marginLeft: 75,
+    marginLeft: 85,
     marginTop: -60,
   },
   cardContent: {
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingTop: 10,
     marginRight: 150,
-    backgroundColor: "#07b8bf",
+    backgroundColor: "#87CEFA",
     borderRadius: 100,
     // borderWidth:1,
     width: 50,
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
 
   cardIcon: {
     flex: 1,
-    marginLeft: 20,
+    marginLeft: 15,
     marginTop: 40,
   },
 
