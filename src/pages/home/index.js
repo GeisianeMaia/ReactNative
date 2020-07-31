@@ -48,12 +48,7 @@ const Home = () => {
               style={styles.card}
             />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.images}>
-            <Image
-              source={require('../home/img/info5.jpg')}
-              style={styles.card}
-            />
-          </TouchableOpacity>
+          
         </ScrollView>
       </View>
     </Fragment>
@@ -67,12 +62,12 @@ const styles = StyleSheet.create({
     top: -20,
     fontSize: 32,
     color: '#35AAFF',
+    fontFamily: 'Ubuntu_700Bold',
   },
   info: {
     flexDirection: 'row',
     marginTop: 16,
     marginBottom: 32,
-    
   },
   images: {
     backgroundColor: '#fff',
@@ -82,8 +77,8 @@ const styles = StyleSheet.create({
     width: 350,
     borderRadius: 8,
     paddingHorizontal: 2,
-    paddingTop: 10,
-    paddingBottom: 10,
+    paddingTop: 2,
+    paddingBottom: 2,
     marginRight: 8,
     alignItems: 'center',
     justifyContent: 'space-between',

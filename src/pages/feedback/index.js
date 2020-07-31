@@ -72,6 +72,7 @@ export default function Covid({ navigation }) {
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setName}
+        fontFamily="Roboto_400Regular"
       />
 
       <TextInput
@@ -81,6 +82,7 @@ export default function Covid({ navigation }) {
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setEmpresa}
+        fontFamily="Roboto_400Regular"
       />
 
       <TextInput
@@ -90,6 +92,7 @@ export default function Covid({ navigation }) {
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setCpf}
+        fontFamily="Roboto_400Regular"
       />
 
       <TextInput
@@ -99,6 +102,7 @@ export default function Covid({ navigation }) {
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setTitle}
+        fontFamily="Roboto_400Regular"
       />
 
       <TextInput
@@ -110,6 +114,7 @@ export default function Covid({ navigation }) {
         placeholderTextColor="#35AAFF"
         autoCorrect={false}
         onChangeText={setDescription}
+        fontFamily="Roboto_400Regular"
       />
 
       <TouchableWithoutFeedback onPress={Send}>
@@ -117,7 +122,7 @@ export default function Covid({ navigation }) {
           <Feather
             name="arrow-right"
             size={26}
-            color={"#fff"}
+            color={'#fff'}
             style={styles.IconLock}
           ></Feather>
         </Animated.View>
@@ -138,41 +143,42 @@ const styles = StyleSheet.create({
   input: {
     width: 300,
     height: 40,
-    borderColor: "#ccc",
+    borderColor: '#ccc',
     borderWidth: 1,
     marginBottom: 20,
     paddingLeft: 10,
-    fontSize:18
+    fontSize: 18,
   },
 
   textarea: {
     height: 120,
     width: 300,
-    borderColor: "#ccc",
+    borderColor: '#ccc',
     borderWidth: 1,
     paddingLeft: 10,
-    fontSize:18
+    fontSize: 18,
   },
 
   title: {
-    textAlign: "center",
+    textAlign: 'center',
     fontSize: 25,
     marginBottom: 30,
-    color:'#35AAFF'
+    color: '#35AAFF',
+    fontFamily: 'Ubuntu_700Bold',
   },
 
   button: {
-    backgroundColor: "#07b8bf",
+    backgroundColor: '#07b8bf',
     // position: 'absolute',
     marginTop: 60,
     marginLeft: 235,
     width: 60,
     height: 60,
     borderRadius: 60,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     shadowRadius: 10,
-    shadowColor: "#07b8bf",
+    shadowColor: '#07b8bf',
     shadowOpacity: 0.3,
     shadowOffset: {
       height: 10,
